@@ -2,7 +2,7 @@ var menuState = {
 
 	create: function() { 
 		// Name of the game
-		var nameLabel = game.add.text(game.world.centerX, 80, 'Name', { font: '50px Arial', fill: '#ffffff' });
+		var nameLabel = game.add.text(game.world.centerX, 80, 'Março', { font: '50px Arial', fill: '#ffffff' });
 		nameLabel.anchor.setTo(0.5, 0.5);
 
 		// How to start the game
