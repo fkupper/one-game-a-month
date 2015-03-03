@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{3A5CED3E-FAD6-43C6-9520-E3EEC78E7ABA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\titleMusic.mp3" />
+    <Content Include="assets\sprites\ball\alienBeige_badge1.png" />
+    <Content Include="assets\sprites\ball\alienBlue_badge1.png" />
+    <Content Include="assets\sprites\ball\alienGreen_badge1.png" />
+    <Content Include="assets\sprites\ball\alienPink_badge1.png" />
+    <Content Include="assets\sprites\ball\alienYellow_badge1.png" />
+    <Content Include="assets\sprites\boxItem.png" />
+    <Content Include="assets\sprites\items_spritesheet.png" />
+    <Content Include="assets\sprites\items_spritesheet.xml" />
+    <Content Include="assets\sprites\muteButton.png" />
+    <Content Include="assets\sprites\playerBar.png" />
+    <Content Include="assets\sprites\progressBar.png" />
+    <Content Include="assets\sprites\tiles_spritesheet.png" />
+    <Content Include="assets\sprites\tiles_spritesheet.xml" />
+    <Content Include="assets\sprites\titlepage.png" />
+    <Content Include="index.html" />
+    <Content Include="lib\phaser.js" />
+    <Content Include="lib\phaser.min.js" />
+    <Content Include="style\app.css" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="lib\phaser.d.ts" />
+    <TypeScriptCompile Include="lib\pixi.d.ts" />
+    <TypeScriptCompile Include="src\entities\Ball.ts" />
+    <TypeScriptCompile Include="src\Game.ts" />
+    <TypeScriptCompile Include="src\player\Player.ts" />
+    <TypeScriptCompile Include="src\states\Boot.ts" />
+    <TypeScriptCompile Include="src\states\levels\Level1.ts" />
+    <TypeScriptCompile Include="src\states\MainMenu.ts" />
+    <TypeScriptCompile Include="src\states\Preloader.ts" />
+    <TypeScriptCompile Include="src\Util.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\assets.json" />
+    <Content Include="assets\pack.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>_03_15_Gloomy_Go</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54808</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54654/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptOutFile>game.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

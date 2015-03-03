@@ -1,0 +1,6 @@
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\bin\03-15 Gloomy Go.dll.config
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\bin\03-15 Gloomy Go.dll
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\bin\03-15 Gloomy Go.pdb
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\obj\Debug\03-15 Gloomy Go.dll
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\obj\Debug\03-15 Gloomy Go.pdb
+C:\work\gamedev\git\one-game-a-month\03-15 Gloomy Go\obj\Debug\03-15 Gloomy Go.csprojResolveAssemblyReference.cache
